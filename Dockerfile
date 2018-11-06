@@ -18,6 +18,7 @@ RUN echo "===> Adding Ansible's prerequisites..."   && \
     pip2 install --upgrade pywinrm                   && \
     pip2 install --upgrade pyvmomi                   && \
     pip2 install --upgrade ansible                   && \
+    pip2 install --upgrade openstacksdk              && \
     \
     echo "===> Installing handy tools (not absolutely required)..."  && \
     apt-get install -y sshpass openssh-client  && \
