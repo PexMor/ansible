@@ -31,3 +31,8 @@ docker run -it --rm \
     xlinux/ansible
     /work/playbook.yaml
 ```
+
+# Docker hub
+
+You can check the image at Docker hub as [xlinux/ansible](https://hub.docker.com/r/xlinux/ansible).
+
