@@ -38,5 +38,7 @@ RUN echo "===> Adding Ansible's prerequisites..."   && \
 # ENV PYTHONPATH  /opt/ansible/lib:$PYTHONPATH
 # ENV MANPATH     /opt/ansible/docs/man:$MANPATH
 
+WORKDIR /work
+
 # default command: display Ansible version
 CMD [ "ansible-playbook", "--version" ]
