@@ -28,9 +28,13 @@ docker run -it --rm \
     -v $PWD:/work \
     -v $HOME/.docker-ansible/etc:/etc/ansible \
     -v $HOME/.docker-ansible/os:/etc/openstack \
-    xlinux/ansible
-    /work/playbook.yaml
+    xlinux/ansible \
+    ansible-playbook \
+    playbook.yaml
 ```
+
+In this example openstack and ansible config directories are mapped into the container so the python modules are happy.
+And also the working directory is set to /work thus you do not have to use path when running the ansible-playbook.
 
 # Docker hub
 
